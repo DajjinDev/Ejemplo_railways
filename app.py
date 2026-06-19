@@ -20,8 +20,8 @@ class Producto(db.Model):
     precio = db.Column(db.Float, nullable=False)
     stock = db.Column(db.Integer, nullable=False)
 
-    with app.app_context():
-        db.create_all()   
+with app.app_context():
+    db.create_all()   
 
 # RUTA PRINCIPAL
 
